@@ -1,0 +1,586 @@
+Using pre-set license
+Built from '2022.3/release' branch; Version is '2022.3.20f1 (61c2feb0970d) revision 6406910'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'en' Physical Memory: 16220 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\UnityEditor\2022.3.20f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/TuanDepTrai/Downloads/Telegram Desktop/BubbleShooterEasterBunny
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+52405
+Successfully changed project path to: C:/Users/TuanDepTrai/Downloads/Telegram Desktop/BubbleShooterEasterBunny
+C:/Users/TuanDepTrai/Downloads/Telegram Desktop/BubbleShooterEasterBunny
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [15812] Host "[IP] 172.18.1.191 [Port] 0 [Flags] 2 [Guid] 2455672600 [EditorId] 2455672600 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EF3DEN8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [15812] Host "[IP] 172.18.1.191 [Port] 0 [Flags] 2 [Guid] 2455672600 [EditorId] 2455672600 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EF3DEN8) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 7.49 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.20f1 (61c2feb0970d)
+[Subsystems] Discovering subsystems at path D:/UnityEditor/2022.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/TuanDepTrai/Downloads/Telegram Desktop/BubbleShooterEasterBunny/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f99)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   31.0.15.1691
+Initialize mono
+Mono path[0] = 'D:/UnityEditor/2022.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UnityEditor/2022.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/UnityEditor/2022.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UnityEditor/2022.3.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/UnityEditor/2022.3.20f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: D:/UnityEditor/2022.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007919 seconds.
+- Loaded All Assemblies, in  0.593 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 427 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.965 seconds
+Domain Reload Profiling: 1558ms
+	BeginReloadAssembly (206ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (57ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (79ms)
+	LoadAllAssembliesAndSetupDomain (234ms)
+		LoadAssemblies (205ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (230ms)
+			TypeCache.Refresh (228ms)
+				TypeCache.ScanAssembly (208ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (966ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (869ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (581ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (199ms)
+			ProcessInitializeOnLoadMethodAttributes (81ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.691 seconds
+Refreshing native plugins compatible for Editor in 4.31 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.786 seconds
+Domain Reload Profiling: 1476ms
+	BeginReloadAssembly (201ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (368ms)
+		LoadAssemblies (342ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (137ms)
+			TypeCache.Refresh (121ms)
+				TypeCache.ScanAssembly (100ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (786ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (564ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (48ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (411ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 4.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1472 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (57.6 KB). Loaded Objects now: 1938.
+Memory consumption went from 91.0 MB to 90.9 MB.
+Total: 4.253800 ms (FindLiveObjects: 0.394400 ms CreateObjectMapping: 0.176600 ms MarkObjects: 3.550600 ms  DeleteObjects: 0.130800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 42236.343050 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/effects/light_ball_effect.png
+  artifactKey: Guid(76d5316858e6f8a41811d2a1d1a98ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/effects/light_ball_effect.png using Guid(76d5316858e6f8a41811d2a1d1a98ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a1406c52acf144f7903857bff85171') in 0.102525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_profile_picture_blank_portrait.png
+  artifactKey: Guid(873fdfbb56c5d412494aa5cb2dfbd059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_profile_picture_blank_portrait.png using Guid(873fdfbb56c5d412494aa5cb2dfbd059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9060c8c00dbcc3f6af4a6e2a7d4ae057') in 0.032014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/text/perfect.png
+  artifactKey: Guid(a781b84def1307747b405c87e31463c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/text/perfect.png using Guid(a781b84def1307747b405c87e31463c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09476fd64ae1bd479bbdd05564af2042') in 0.026513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/characters/rabbit/rabbit_01.png
+  artifactKey: Guid(aba928fa562adc84e84418e3bb2a5d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/characters/rabbit/rabbit_01.png using Guid(aba928fa562adc84e84418e3bb2a5d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd75881d50a8c7519ee288dc0b62b31') in 0.028833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 144.229475 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/effects/fire/2_f.png
+  artifactKey: Guid(2b95bd3a369b44346bbc88931320859b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/effects/fire/2_f.png using Guid(2b95bd3a369b44346bbc88931320859b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624380d0a53f940a408f76d692891fee') in 0.022479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/game_menu/arrow.png
+  artifactKey: Guid(b7f82c60facb08240853707558b3f736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/game_menu/arrow.png using Guid(b7f82c60facb08240853707558b3f736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa61f7c8f895dd4e7b6ac89d615ad28') in 0.018676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/back.png
+  artifactKey: Guid(db01b9a88ddafa34892ed3ac0e098309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/back.png using Guid(db01b9a88ddafa34892ed3ac0e098309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0abfa11d663d5c17810068ad8044441') in 0.029639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/backgrounds/background_01.png
+  artifactKey: Guid(7e3d7d3d9325a8a4988ed8251004b697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/backgrounds/background_01.png using Guid(7e3d7d3d9325a8a4988ed8251004b697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b86c9721129694a044f5b9a5c16d21c') in 0.034236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.558598 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/bonuses/ball_chicken.png
+  artifactKey: Guid(2c287bacbf8a03a419eea29290b502e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/bonuses/ball_chicken.png using Guid(2c287bacbf8a03a419eea29290b502e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '792ad47d68899e72f7dbe93a4503d567') in 0.023860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.055872 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/balls/ball_violet.png
+  artifactKey: Guid(106bd95171c358c45a7100c11e49b91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/balls/ball_violet.png using Guid(106bd95171c358c45a7100c11e49b91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '037e8b40cba44d6c7715353c9976735d') in 0.019230 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.661302 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/game_menu/bar.png
+  artifactKey: Guid(ec991e0c73923104793ff14bf3c2f088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/game_menu/bar.png using Guid(ec991e0c73923104793ff14bf3c2f088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50fd49c57e7462ae0dcaf997a9c1088c') in 0.018879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001447 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/boosts/boost_icon_01.png
+  artifactKey: Guid(cc1c6b9c0eeef8843aec97362b0c2ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/boosts/boost_icon_01.png using Guid(cc1c6b9c0eeef8843aec97362b0c2ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6f96bbb24ad87cb7336477ecd546040') in 0.022954 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.460280 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/boosts/boost_icon_03.png
+  artifactKey: Guid(643a69211d9502f47ad12a9ed59d5ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/boosts/boost_icon_03.png using Guid(643a69211d9502f47ad12a9ed59d5ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534815e74a31a9d5ea212dfa40530ad9') in 0.021761 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.044150 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/map/MapGUI/boost_plus_button.png
+  artifactKey: Guid(354d2b997f8a09149b905a57ad1c5462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/map/MapGUI/boost_plus_button.png using Guid(354d2b997f8a09149b905a57ad1c5462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5821970cfbca5c6c679ca7e52902a76c') in 0.018072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.275311 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/boosts/buy_boost_button.png
+  artifactKey: Guid(63a4532ecd3b11e4f87d7fefc8d2d566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/boosts/buy_boost_button.png using Guid(63a4532ecd3b11e4f87d7fefc8d2d566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3ea459a43a89bc9309b7cb9cca7a84') in 0.023183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.459118 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/bonuses/candy_red.png
+  artifactKey: Guid(f1a7ec8c93cba4a438e4a8e3d297176a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/bonuses/candy_red.png using Guid(f1a7ec8c93cba4a438e4a8e3d297176a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7505574629d87f4b1ec567394ebb5636') in 0.022109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.366874 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/play_menu/clear_banner.png
+  artifactKey: Guid(0c419f9965d6388418ef85aff9677b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/play_menu/clear_banner.png using Guid(0c419f9965d6388418ef85aff9677b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97178a7ae254744ac3c8ff6d0fb009fa') in 0.030758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028814 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/boosts/color_ball.png
+  artifactKey: Guid(f462ea89e9892e84d9bc35ef559a8095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/boosts/color_ball.png using Guid(f462ea89e9892e84d9bc35ef559a8095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '301a2fdfdfed4c77de2abd9b6d3e062b') in 0.018963 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.018129 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_button_check_on.png
+  artifactKey: Guid(bfc88d72eb60e4198af35108afd6be9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_button_check_on.png using Guid(bfc88d72eb60e4198af35108afd6be9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e269fd35e6f3ea2d80779685f4b8c5') in 0.017943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.889812 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_button_grey_focused.9.png
+  artifactKey: Guid(3b120dec13f5943bb96fe75f4a559f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_button_grey_focused.9.png using Guid(3b120dec13f5943bb96fe75f4a559f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8b9ed2e5a8e227ea64edc60b03e5b1') in 0.021961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.066590 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png
+  artifactKey: Guid(7654d4be5fd2847af857f7eb5256088a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-xhdpi/com_facebook_button_grey_normal.9.png using Guid(7654d4be5fd2847af857f7eb5256088a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04b54515ab0c670e8fe1cfe5141deb5') in 0.017839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.657132 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-hdpi/com_facebook_button_grey_normal.9.png
+  artifactKey: Guid(fd47af8ed84764c95ba748fa649a902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-hdpi/com_facebook_button_grey_normal.9.png using Guid(fd47af8ed84764c95ba748fa649a902a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a04c12342eed177654145f46f836b9') in 0.023255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 26.459297 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png
+  artifactKey: Guid(f2828d72b00584d86941ea2f5506c94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-xhdpi/com_facebook_button_grey_pressed.9.png using Guid(f2828d72b00584d86941ea2f5506c94a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5d88dd5dbfa000477a807ee0f1b843') in 0.024862 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.028000 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_close.png
+  artifactKey: Guid(b9bfab71d823449478cc84762eeb2172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_close.png using Guid(b9bfab71d823449478cc84762eeb2172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9535de10c6ad0fd2f768f3626729ecba') in 0.019185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.332740 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-ldpi/com_facebook_close.png
+  artifactKey: Guid(dd63ad044509c465cac91357aa3e948c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-ldpi/com_facebook_close.png using Guid(dd63ad044509c465cac91357aa3e948c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7537ae7efb20b5de1132a0f5d588369') in 0.018933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007716 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_icon.png
+  artifactKey: Guid(9394ef277bec243b7937205559fafd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_icon.png using Guid(9394ef277bec243b7937205559fafd5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c424e820b7ca0e77eea1ab2e1a9a2f06') in 0.021912 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.460835 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-ldpi/com_facebook_icon.png
+  artifactKey: Guid(bef7d6248a4a947268318f12d310f320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-ldpi/com_facebook_icon.png using Guid(bef7d6248a4a947268318f12d310f320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594d267aded30738532adf11762b0f32') in 0.018354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.006630 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_list_section_header_background.9.png
+  artifactKey: Guid(eb2dbd4f1667e498987324b516438e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_list_section_header_background.9.png using Guid(eb2dbd4f1667e498987324b516438e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7bb391919e62b15104ba8383bb2765c') in 0.020208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.018696 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-hdpi/com_facebook_loginbutton_blue_focused.png
+  artifactKey: Guid(26ab6a1bd831e4a7bb6ebc9c4790660e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-hdpi/com_facebook_loginbutton_blue_focused.png using Guid(26ab6a1bd831e4a7bb6ebc9c4790660e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3345de1f8d964d39804b522557ea242a') in 0.018417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.020051 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-xhdpi/com_facebook_loginbutton_blue_normal.png
+  artifactKey: Guid(e4486e0bd3ecb4254a3a47ba3cdd93be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-xhdpi/com_facebook_loginbutton_blue_normal.png using Guid(e4486e0bd3ecb4254a3a47ba3cdd93be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3423414d49d3ccc4ee4c5be91366a7') in 0.020607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.597513 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_loginbutton_blue_normal.png
+  artifactKey: Guid(fb29a5c75e2db4f6cb2a60d8acb9b9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_loginbutton_blue_normal.png using Guid(fb29a5c75e2db4f6cb2a60d8acb9b9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02a5104c965170b34a78d60ab92588c1') in 0.015931 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003353 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-xhdpi/com_facebook_loginbutton_blue_pressed.png
+  artifactKey: Guid(c3b5b3c0aa72f43ec9ecb9657cb94b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-xhdpi/com_facebook_loginbutton_blue_pressed.png using Guid(c3b5b3c0aa72f43ec9ecb9657cb94b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c3715ff4b7a0eebbc9207632d4c3e7') in 0.011419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 28.784026 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-hdpi/com_facebook_logo.png
+  artifactKey: Guid(fe4b5be94b9b7434097e99428f2dd0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable-hdpi/com_facebook_logo.png using Guid(fe4b5be94b9b7434097e99428f2dd0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb3679c76647c7c30d346732a9fa1c7a') in 0.023511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.025645 seconds.
+  path: Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_profile_picture_blank_square.png
+  artifactKey: Guid(9a897806272644ef19c7cde70953e6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Plugins/Android/res/drawable/com_facebook_profile_picture_blank_square.png using Guid(9a897806272644ef19c7cde70953e6e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a46682e3f9ab2fd9a3841cfcc392a22') in 0.021628 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/boosts/fire_ball.png
+  artifactKey: Guid(7c12fc33ea5c19f4999085809829f965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/boosts/fire_ball.png using Guid(7c12fc33ea5c19f4999085809829f965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2062e8b7910bb35bd026a2b24faec42f') in 0.019490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.011292 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/text/good.png
+  artifactKey: Guid(0e24598b42947974082ffe27568e9df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/text/good.png using Guid(0e24598b42947974082ffe27568e9df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050c7f4f339f8d9a2bb50b91777567df') in 0.017937 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/icons/icon_72.png
+  artifactKey: Guid(4ab60c3bfea70ad468726dcebcceb555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/icons/icon_72.png using Guid(4ab60c3bfea70ad468726dcebcceb555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fda6aaeb3cd2e64edeff4cf53f20d63') in 0.020436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.055604 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/balls/pointer.png
+  artifactKey: Guid(bf540917a9627ac418b3b38e3a71a876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/balls/pointer.png using Guid(bf540917a9627ac418b3b38e3a71a876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f756a7af400788e68e2fc221227b2e9') in 0.019176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.125788 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/game_menu/star_bar.png
+  artifactKey: Guid(5f50b3a75193f4444a91d0024fbcdc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/game_menu/star_bar.png using Guid(5f50b3a75193f4444a91d0024fbcdc65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57bb950e554d6b6b9678ea8f881d67c1') in 0.020018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.023457 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/game_menu/top.png
+  artifactKey: Guid(f1bb2de50e349e04c8b203421d73c940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/game_menu/top.png using Guid(f1bb2de50e349e04c8b203421d73c940) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ba8fa449abdfdabedcf3b392983108') in 0.016089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/menu/text/wonderful.png
+  artifactKey: Guid(6c40d7af2034e7944a937700050f5223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/menu/text/wonderful.png using Guid(6c40d7af2034e7944a937700050f5223) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d7407e83ed6ccd0c47060bc6670892') in 0.019375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 602.902337 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/Font/goonies_0.png
+  artifactKey: Guid(e2363a82a5499e343ac911f96ecac865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/Font/goonies_0.png using Guid(e2363a82a5499e343ac911f96ecac865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8690613b1e5f1b96d31d911c29eaa5e7') in 0.021274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/BubbleShooterEasterBunny/Textures/Font/helvetica_0.png
+  artifactKey: Guid(ee420302a9d457046a39442e47ed6f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Textures/Font/helvetica_0.png using Guid(ee420302a9d457046a39442e47ed6f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43997806cabce7b2264edd12658fb943') in 0.023684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 189.198775 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19995e0deb6bb6d3a8a7c291b0a7e453') in 0.120838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 6.956118 seconds.
+  path: Assets/BubbleShooterEasterBunny/Materials/Font.mat
+  artifactKey: Guid(148dde36ca535624381db0c3563d4598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Materials/Font.mat using Guid(148dde36ca535624381db0c3563d4598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b4f4333047f5dd425a4209910601c1') in 0.033092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/BubbleShooterEasterBunny/Fonts/FONTH__.TTF
+  artifactKey: Guid(0a0d2cb73e287544895a3718c74ae69b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Fonts/FONTH__.TTF using Guid(0a0d2cb73e287544895a3718c74ae69b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab5ceba93c231c617d31ec4a47b1666') in 0.021458 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d375ca063584e7f8e4b40ae5b0bd31a') in 0.019918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/BubbleShooterEasterBunny/Fonts/CooperBlackStd.otf
+  artifactKey: Guid(c44cab35b56f1a24c81b9dd0716dde23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Fonts/CooperBlackStd.otf using Guid(c44cab35b56f1a24c81b9dd0716dde23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2428407f3e2d33ca46db4f6947de493f') in 0.018820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 10.380675 seconds.
+  path: Assets/BubbleShooterEasterBunny/Fonts/Fonts.prefab
+  artifactKey: Guid(1d5e59f6eb24bee4d86af6c5da26debf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BubbleShooterEasterBunny/Fonts/Fonts.prefab using Guid(1d5e59f6eb24bee4d86af6c5da26debf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c600fa7dbe8fbbb0e9aaae7b83b2ffe1') in 0.012640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
