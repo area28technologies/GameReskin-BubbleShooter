@@ -125,7 +125,7 @@ public class mainscript : MonoBehaviour
             if (value > 0)
             {
                 SoundBase.Instance.GetComponent<AudioSource>().PlayOneShot(SoundBase.Instance.combo[Mathf.Clamp(value - 1, 0, 5)]);
-                creatorBall.Instance.CreateBug(lastBall, value);
+                //creatorBall.Instance.CreateBug(lastBall, value);
                 if (value >= 6)
                 {
                     SoundBase.Instance.GetComponent<AudioSource>().PlayOneShot(SoundBase.Instance.combo[5]);

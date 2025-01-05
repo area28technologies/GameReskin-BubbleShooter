@@ -5,19 +5,20 @@ public class SmoothMove : MonoBehaviour
 {
     public Vector3 targetPos;
 
-    // Use this for initialization
     void Start()
     {
-        transform.parent.SetParent(GameObject.Find("-Meshes").transform);
-        if (GamePlay.Instance.GameStatus == GameState.Playing)
-            StartCoroutine(StartMove());
-        else
-        {
-            mainscript.Instance.TargetCounter1++;
-        }
+        //transform.parent.SetParent(GameObject.Find("-Meshes").transform);
+        //if (GamePlay.Instance.GameStatus == GameState.Playing)
+        //{
+        //    StartCoroutine(StartMove());
+        //    //Debug.Log("What");
+        //}
+        //else
+        //{
+        //    mainscript.Instance.TargetCounter1++;
+        //}
     }
 
-    // Update is called once per frame
     IEnumerator StartMove()
     {
         GetComponent<SpriteRenderer>().sortingLayerID = 2;

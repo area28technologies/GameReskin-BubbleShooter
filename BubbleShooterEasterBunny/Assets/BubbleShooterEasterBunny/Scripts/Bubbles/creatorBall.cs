@@ -54,14 +54,14 @@ public class creatorBall : MonoBehaviour
         }
         Camera.main.GetComponent<mainscript>().connectNearBallsGlobal();
         StartCoroutine(getBallsForMesh());
-        ShowBugs();
+        //ShowBugs();
     }
 
 
     public void LoadMap(int[] pMap)
     {
         map = pMap;
-        int key = -1;
+        //int key = -1;
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < columns; j++)
@@ -73,7 +73,7 @@ public class creatorBall : MonoBehaviour
                 }
                 else if (mapValue == 0 && LevelData.mode == ModeGame.Vertical && i == 0)
                 {
-                    Instantiate(Resources.Load("Prefabs/TargetStar"), GetSquare(i, j).transform.position, Quaternion.identity);
+                    //Instantiate(Resources.Load("Prefabs/TargetStar"), GetSquare(i, j).transform.position, Quaternion.identity);
                 }
             }
         }

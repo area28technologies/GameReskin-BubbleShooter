@@ -368,7 +368,7 @@ public class ball : MonoBehaviour
         if( gameObject == null ) return;
         if( LevelData.mode == ModeGame.Vertical && isTarget )
         {
-            Instantiate( Resources.Load( "Prefabs/TargetStar" ), gameObject.transform.position, Quaternion.identity );
+            //Instantiate( Resources.Load( "Prefabs/TargetStar" ), gameObject.transform.position, Quaternion.identity );
         }
         else if( LevelData.mode == ModeGame.Animals && isTarget )
         {
@@ -381,10 +381,10 @@ public class ball : MonoBehaviour
         if( gameObject.GetComponent<Rigidbody2D>() == null ) gameObject.AddComponent<Rigidbody2D>();
         gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
         gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
-        gameObject.GetComponent<Rigidbody2D>().fixedAngle = false;
+        //gameObject.GetComponent<Rigidbody2D>().fixedAngle = false;
         gameObject.GetComponent<Rigidbody2D>().velocity = gameObject.GetComponent<Rigidbody2D>().velocity + new Vector2( Random.Range( -2, 2 ), 0 );
         gameObject.GetComponent<CircleCollider2D>().enabled = true;
-        gameObject.GetComponent<CircleCollider2D>().isTrigger = false;
+        gameObject.GetComponent<CircleCollider2D>().isTrigger = false;  
         gameObject.GetComponent<CircleCollider2D>().radius = 0.3f;
         GetComponent<ball>().falling = true;
 
@@ -1009,7 +1009,7 @@ public class ball : MonoBehaviour
 
         if( LevelData.mode == ModeGame.Vertical && isTarget )
         {
-            Instantiate( Resources.Load( "Prefabs/TargetStar" ), gameObject.transform.position, Quaternion.identity );
+            //Instantiate( Resources.Load( "Prefabs/TargetStar" ), gameObject.transform.position, Quaternion.identity );
         }
         else if( LevelData.mode == ModeGame.Animals && isTarget )
         {
