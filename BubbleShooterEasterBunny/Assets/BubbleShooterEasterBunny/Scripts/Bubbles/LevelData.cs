@@ -9,7 +9,7 @@ using System.Xml;
 
 public enum ModeGame
 {
-    Vertical=0,
+    Vertical = 0,
     Rounded,
     Animals,
 }
@@ -27,10 +27,10 @@ public class LevelData
     public static float LimitAmount
     {
         get { return LevelData.limitAmount; }
-        set 
-        { 
-            LevelData.limitAmount = value;
-            if( value < 0 ) LevelData.limitAmount = 0;
+        set
+        {
+            LevelData.limitAmount = 10;
+            if (value < 0) LevelData.limitAmount = 10000;
         }
     }
     private static bool startReadData;
@@ -40,16 +40,18 @@ public class LevelData
     public static int star1;
     public static int star2;
     public static int star3;
-    public static void LoadDataFromXML(int currentLevel)
+
+    public static void LoadDataFromXML(string currentLevel)
     {
         requestMissions.Clear();
-       // TextAsset textAsset = (TextAsset)Resources.Load(  "4.txt", typeof( TextAsset ) ) ;
-        TextAsset textReader = Resources.Load( "Levels/" + currentLevel ) as TextAsset;
-      //  TextReader textReader = new StreamReader(Application.dataPath + "/Resources/Levels/" + currentLevel + ".tmx");
+        // TextAsset textAsset = (TextAsset)Resources.Load(  "4.txt", typeof( TextAsset ) ) ;
+        TextAsset textReader = Resources.Load("Levels/" + currentLevel) as TextAsset;
+        //TextAsset textReader = Resources.Load("Levels/" + "tuan") as TextAsset;
+        //  TextReader textReader = new StreamReader(Application.dataPath + "/Resources/Levels/" + currentLevel + ".tmx");
         //TextReader textReader = new StreamReader( textAsset );
         //TextReader textReader = new TextReader( textAsset );
-        ProcessGameDataFromXML( textReader );
-       // textReader.Close();
+        ProcessGameDataFromXML(textReader);
+        // textReader.Close();
 
     }
 
@@ -133,10 +135,10 @@ public class LevelData
         }
     }
 
-    static void ProcessGameDataFromXML( TextAsset xmlString )
+    static void ProcessGameDataFromXML(TextAsset xmlString)
     {
         XmlDocument doc = new XmlDocument();
-        doc.LoadXml( xmlString.text );
+        doc.LoadXml(xmlString.text);
         XmlNodeList elemList = doc.GetElementsByTagName("property");
         foreach (XmlElement element in elemList)
         {
@@ -162,8 +164,8 @@ public class LevelData
 
                 if (!colorsDict.ContainsValue((BallColor)value) && value > 0 && value < (int)BallColor.random)
                 {
-                        colorsDict.Add(key, (BallColor)value);
-                        key++;
+                    colorsDict.Add(key, (BallColor)value);
+                    key++;
 
                 }
 
@@ -174,7 +176,7 @@ public class LevelData
 
 
         //random colors
-        if (colorsDict.Count == 0) 
+        if (colorsDict.Count == 0)
         {
             //add constant colors 
             colorsDict.Add(0, BallColor.yellow);
@@ -184,9 +186,9 @@ public class LevelData
             List<BallColor> randomList = new List<BallColor>();
             randomList.Add(BallColor.blue);
             randomList.Add(BallColor.green);
-            if( mode != ModeGame.Rounded ) 
+            if (mode != ModeGame.Rounded)
                 randomList.Add(BallColor.violet);
-            for (int i = 0; i < colors-2; i++)
+            for (int i = 0; i < colors - 2; i++)
             {
                 BallColor randCol = BallColor.yellow;
                 while (colorsDict.ContainsValue(randCol))
@@ -194,7 +196,7 @@ public class LevelData
                     randCol = randomList[UnityEngine.Random.RandomRange(0, randomList.Count)];
                 }
                 colorsDict.Add(2 + i, randCol);
-                
+
             }
 
         }

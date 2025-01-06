@@ -135,7 +135,7 @@ public class mainscript : MonoBehaviour
             }
             else
             {
-                DestroyBugs();
+                //DestroyBugs();
                 FireEffect.SetActive(false);
                 doubleScore = 1;
             }

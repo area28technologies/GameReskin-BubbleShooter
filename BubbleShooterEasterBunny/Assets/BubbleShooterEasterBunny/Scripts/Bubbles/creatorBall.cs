@@ -26,6 +26,7 @@ public class creatorBall : MonoBehaviour
     [HideInInspector]
     public List<GameObject> squares = new List<GameObject>();
     int[] map;
+    bool tuan;
 
     // Use this for initialization
     void Start()
@@ -35,7 +36,9 @@ public class creatorBall : MonoBehaviour
         bug = bug_hd;
         thePrefab.transform.localScale = new Vector3(0.67f, 0.58f, 1);
         Meshes = GameObject.Find("-Ball");
-        LevelData.LoadDataFromXML(mainscript.Instance.currentLevel);
+        LevelData.LoadDataFromXML(mainscript.Instance.currentLevel.ToString());
+        LevelData.LoadDataFromXML("17");
+        //LevelData.LoadDataFromXML("tuan");
 
         createMesh();
         //LevelData.LoadDataFromLocal(mainscript.Instance.currentLevel);
@@ -57,6 +60,14 @@ public class creatorBall : MonoBehaviour
         //ShowBugs();
     }
 
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T) && !tuan)
+        {
+            tuan = true;
+            LoadMap(LevelData.map);
+        }
+    }
 
     public void LoadMap(int[] pMap)
     {
@@ -70,6 +81,8 @@ public class creatorBall : MonoBehaviour
                 if (mapValue > 0)
                 {
                     createBall(GetSquare(i, j).transform.position, (BallColor)mapValue, false, i);
+                    Debug.Log("mapValue: " + mapValue);
+                    Debug.Log("i: " + i * columns + j);
                 }
                 else if (mapValue == 0 && LevelData.mode == ModeGame.Vertical && i == 0)
                 {
@@ -77,6 +90,11 @@ public class creatorBall : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void PlusRowsLoadMap()
+    {
+
     }
 
     private void MoveLevelUp()
@@ -201,12 +219,6 @@ public class creatorBall : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     IEnumerator getBallsForMesh()
     {
         GameObject[] meshes = GameObject.FindGameObjectsWithTag("Mesh");
@@ -274,8 +286,6 @@ public class creatorBall : MonoBehaviour
 
         }
 
-
-
         b = Instantiate(ball, transform.position, transform.rotation) as GameObject;
         b.transform.position = new Vector3(vec.x, vec.y, ball.transform.position.z);
         // b.transform.Rotate( new Vector3( 0f, 180f, 0f ) );
@@ -287,12 +297,9 @@ public class creatorBall : MonoBehaviour
         b.name = b.name + fixedBalls.Length.ToString();
         if (newball)
         {
-
             b.gameObject.layer = 17;
             b.transform.parent = Camera.main.transform;
             Rigidbody2D rig = b.AddComponent<Rigidbody2D>();
-            // b.collider2D.isTrigger = false;
-            //      rig.fixedAngle = true;
             b.GetComponent<CircleCollider2D>().enabled = false;
             rig.gravityScale = 0;
             if (GamePlay.Instance.GameStatus == GameState.Playing)
@@ -443,6 +450,4 @@ public class creatorBall : MonoBehaviour
     {
         return squares[row * columns + col];
     }
-
-
 }
