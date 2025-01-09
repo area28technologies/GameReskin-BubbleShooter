@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using static UnityEngine.GraphicsBuffer;
 
 public class creatorBall : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class creatorBall : MonoBehaviour
     [HideInInspector]
     public List<GameObject> squares = new List<GameObject>();
     int[] map;
-    bool tuan;
+    //bool tuan;
 
     // Use this for initialization
     void Start()
@@ -60,14 +61,14 @@ public class creatorBall : MonoBehaviour
         //ShowBugs();
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.T) && !tuan)
-        {
-            tuan = true;
-            LoadMap(LevelData.map);
-        }
-    }
+    //public void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.T) && !tuan)
+    //    {
+    //        tuan = true;
+    //        LoadMap(LevelData.map);
+    //    }
+    //}
 
     public void LoadMap(int[] pMap)
     {
@@ -81,8 +82,6 @@ public class creatorBall : MonoBehaviour
                 if (mapValue > 0)
                 {
                     createBall(GetSquare(i, j).transform.position, (BallColor)mapValue, false, i);
-                    Debug.Log("mapValue: " + mapValue);
-                    Debug.Log("i: " + i * columns + j);
                 }
                 else if (mapValue == 0 && LevelData.mode == ModeGame.Vertical && i == 0)
                 {
@@ -90,11 +89,6 @@ public class creatorBall : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void PlusRowsLoadMap()
-    {
-
     }
 
     private void MoveLevelUp()
@@ -169,15 +163,12 @@ public class creatorBall : MonoBehaviour
             GamePlay.Instance.GameStatus = GameState.PreTutorial;
         else if (GamePlay.Instance.GameStatus != GameState.GameOver && GamePlay.Instance.GameStatus != GameState.Win)
             GamePlay.Instance.GameStatus = GameState.Playing;
-
-
     }
 
     public void MoveLevelDown()
     {
         StartCoroutine(MoveUpDownCor(true));
     }
-
     private bool BubbleBelowLine()
     {
         throw new System.NotImplementedException();
