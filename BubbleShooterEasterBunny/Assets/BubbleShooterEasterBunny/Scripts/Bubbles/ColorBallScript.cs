@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System;
+
 
 public enum BallColor
 {
@@ -54,7 +55,7 @@ public class ColorBallScript : MonoBehaviour {
     public void ChangeRandomColor()
     {
         mainscript.Instance.GetColorsInGame();
-        SetColor( (BallColor)mainscript.colorsDict[Random.Range( 0, mainscript.colorsDict.Count )]);
+        SetColor( (BallColor)mainscript.colorsDict[UnityEngine.Random.Range( 0, mainscript.colorsDict.Count )]);
         GetComponent<Animation>().Stop();
     }
 

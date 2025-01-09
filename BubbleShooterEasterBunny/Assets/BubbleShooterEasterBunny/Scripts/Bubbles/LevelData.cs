@@ -174,6 +174,21 @@ public class LevelData
 
         }
 
+        #region NEW 
+        for (int i = 1; i <= 5; i++)
+        {
+            if (colorsDict.ContainsKey(i))
+            {
+                colorsDict[i] = (BallColor)i;
+            }
+            else
+            {
+                colorsDict.Add(i, (BallColor)i);
+            }
+        }
+        return;
+        #endregion
+
 
         //random colors
         if (colorsDict.Count == 0)
