@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using static UnityEngine.GraphicsBuffer;
+using System;
 
 public class creatorBall : MonoBehaviour
 {
@@ -28,6 +29,9 @@ public class creatorBall : MonoBehaviour
     public List<GameObject> squares = new List<GameObject>();
     int[] map;
     //bool tuan;
+    private List<int> colorRandoms = new List<int>();
+    public List<BallColor> colorRandomPercentage;
+    private List<BallColor> colorRandomPercentageTemp = new List<BallColor>();
 
     // Use this for initialization
     void Start()
@@ -76,12 +80,13 @@ public class creatorBall : MonoBehaviour
         //int key = -1;
         for (int i = 0; i < rows; i++)
         {
+            SetRandomColorList();
             for (int j = 0; j < columns; j++)
             {
                 int mapValue = map[i * columns + j];
                 if (mapValue > 0)
                 {
-                    createBall(GetSquare(i, j).transform.position, (BallColor)mapValue, false, i);
+                    createBall(GetSquare(i, j).transform.position, (BallColor)mapValue, false, i, j);
                 }
                 else if (mapValue == 0 && LevelData.mode == ModeGame.Vertical && i == 0)
                 {
@@ -206,7 +211,7 @@ public class creatorBall : MonoBehaviour
                 }
             }
             if (listFreePlaces.Count > 0)
-                listFreePlaces[Random.Range(0, listFreePlaces.Count)].ChangeColor(1);
+                listFreePlaces[UnityEngine.Random.Range(0, listFreePlaces.Count)].ChangeColor(1);
         }
     }
 
@@ -252,8 +257,21 @@ public class creatorBall : MonoBehaviour
             createBall(v);
         }
     }
+    
+    void SetRandomColorList()
+    {
+        colorRandoms.Clear();
+        colorRandomPercentageTemp.Clear();
+        colorRandomPercentageTemp.AddRange(colorRandomPercentage);
+        for (int i = 1; i <= 11; i++)
+        {
+            BallColor getColor = colorRandomPercentageTemp[UnityEngine.Random.Range(0, colorRandomPercentageTemp.Count)];
+            colorRandomPercentageTemp.Remove(getColor);
+            colorRandoms.Add((int)getColor);
+        }
+    }
 
-    public GameObject createBall(Vector3 vec, BallColor color = BallColor.random, bool newball = false, int row = 1)
+    public GameObject createBall(Vector3 vec, BallColor color = BallColor.random, bool newball = false, int row = 1, int column = 1)
     {
         GameObject b = null;
         List<BallColor> colors = new List<BallColor>();
@@ -264,16 +282,19 @@ public class creatorBall : MonoBehaviour
         }
 
         if (color == BallColor.random)
-            color = (BallColor)LevelData.colorsDict[Random.Range(0, LevelData.colorsDict.Count)];
+        {
+            //color = (BallColor)LevelData.colorsDict[Random.Range(0, LevelData.colorsDict.Count)];
+            color = (BallColor)LevelData.colorsDict[colorRandoms[column]];
+        }
         if (newball && mainscript.colorsDict.Count > 0)
         {
             if (GamePlay.Instance.GameStatus == GameState.Playing)
             {
                 mainscript.Instance.GetColorsInGame();
-                color = (BallColor)mainscript.colorsDict[Random.Range(0, mainscript.colorsDict.Count)];
+                color = (BallColor)mainscript.colorsDict[UnityEngine.Random.Range(0, mainscript.colorsDict.Count)];
             }
             else
-                color = (BallColor)LevelData.colorsDict[Random.Range(0, LevelData.colorsDict.Count)];
+                color = (BallColor)LevelData.colorsDict[UnityEngine.Random.Range(0, LevelData.colorsDict.Count)];
 
         }
 
@@ -373,9 +394,9 @@ public class creatorBall : MonoBehaviour
         int color = 0;
         string sTag = "";
         if (mainscript.stage < 6)
-            color = Random.Range(0, 4 + mainscript.stage - 1);
+            color = UnityEngine.Random.Range(0, 4 + mainscript.stage - 1);
         else
-            color = Random.Range(0, 4 + 6);
+            color = UnityEngine.Random.Range(0, 4 + 6);
 
         if (color == 0) sTag = "Orange";
         else if (color == 1) sTag = "Red";
